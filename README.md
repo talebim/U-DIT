@@ -7,5 +7,5 @@ This repository contains a new deep learning method based on vision transformer 
 
 2.To preprocess data and train the model run the script main.py.
 ```
-python main.py --main_path your DATA_DIR
+python main.py --main-path your DATA_DIR
 ```
