@@ -7,19 +7,31 @@ This repository contains a new deep learning method based on vision transformer 
 
 2.To preprocess data and train the model run the script main.py.
 ```
-python main.py --main-path your DATA_DIR --save-dir your OUT_DIR
+python main.py --main-path your DATA_DIR --save-dir your save model DIR
 ```
 The segmented image of test set will be saved in outputs.
 ## **Steps to test the pretrained model:**
-1.To reproduce the results, download weights of our best model from **[here](https://drive.google.com/file/d/1iMSjN4b1y_uBoCqYYazqd33tP7uWjvCq/view?usp=drive_link)**
+1.To reproduce the results, download weights of our best model from **[here](https://drive.google.com/drive/u/0/folders/1nvVeGaBRPVT2r9oLPlpjhzYKAptHRE8D)**
  
-2.Put the last.ckpt file in ckpt folder
+2.Put the best_model.pth file in your save model DIR
 
 2.Run the script predict.py.
 ```
-python predict.py --data-root your DATA_DIR --save-path your OUT_DIR
+python predict.py --processed-root your Processed DATA_DIR --output-dir your OUT_DIR
 ```
+## **Requirements**
+The code is tested on Ubuntu 20.04 with the following components:
+
+Software
+Python 3.8
+pytorch 1.13
+CUDA 11.8 
+
+## Logs
+To launch the tensorboard instance run
+```
+tensorboard --logdir 'logs/U_DIT'
+```
+It will give a view on the evolution of the loss for both the training and validation data.
 
 
-
-https://drive.google.com/drive/u/0/folders/1nvVeGaBRPVT2r9oLPlpjhzYKAptHRE8D
