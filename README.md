@@ -5,7 +5,7 @@ This repository contains a new deep learning method based on vision transformer 
 ## **Train the model:**
 1.Register and download ACDC-2017 dataset from https://www.creatis.insa-lyon.fr/Challenge/acdc/index.html
 
-2.Run the script main.py.
+2.To preprocess data and train the model run the script main.py.
 ```
 python main.py --main_path your DATA_DIR
 ```
