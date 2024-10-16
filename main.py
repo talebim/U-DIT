@@ -8,6 +8,7 @@ import torch.backends.cudnn as cudnn
 from networks.vision_transformer import LDTUnet as ViT_seg
 from Dataload.trainer_ACDC import trainer_ACDC
 from preprocess.preprocess_data import Preprocess
+from predict import predict, real_arrange
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', type=str,
@@ -19,8 +20,9 @@ parser.add_argument('--processed-root', type=str,
 parser.add_argument('--num-classes', type=int,
                     default=4, help='output channel of network')
 parser.add_argument('--save-dir', type=str, help='save model dir', default='./ckpt')
+parser.add_argument('--output-dir', type=str, help='output dir', default='./Prediction')
 parser.add_argument('--max-epochs', type=int,
-                    default=150, help='maximum epoch number to train')
+                    default=5, help='maximum epoch number to train')
 parser.add_argument('--batch-size', type=int,
                     default=5, help='batch_size per gpu')
 parser.add_argument('--base-lr', type=float, default=0.05,
@@ -69,3 +71,7 @@ if __name__ == "__main__":
     net.load_from(args.pretrain)
 
     trainer_ACDC(args, net, args.save_dir)
+
+    _, _, test_data_name = real_arrange(args.main_path)
+
+    predict(args.main_path, test_data_name, args.output_dir, net, target_resolution=(1.25, 1.25))
