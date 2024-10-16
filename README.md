@@ -17,7 +17,7 @@ The segmented image of test set will be saved in outputs.
 
 2.Run the script predict.py.
 ```
-python predict.py --processed-root your Processed DATA_DIR --output-dir your OUT_DIR
+python predict.py --processed-root your Processed DATA_DIR --save-dir your save model DIR --output-dir your OUT_DIR
 ```
 ## **Requirements**
 The code is tested on Ubuntu 20.04 with the following components:
