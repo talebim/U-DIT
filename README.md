@@ -3,9 +3,9 @@
 This repository contains a new deep learning method based on vision transformer (ViT) to automatically localize and segment left ventricle (LV), right ventricle (RV) and myocardium (MYO) in cardiac MR images. The method is introduced in the following paper:
 "[U-DIT: Unet-like Dilated Transformer for Cardiac MRI Segmentation](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4866882)"
 ## **Train the model:**
-1.Register and download ACDC-2017 dataset from https://www.creatis.insa-lyon.fr/Challenge/acdc/index.html
+1.Register and download ACDC-2017 dataset from https://www.creatis.insa-lyon.fr/Challenge/acdc/index.html.
 
-2. Download pretrained weights from [Swin-Unet github](https://github.com/HuCaoFighting/Swin-Unet) and put it in a folder named ckpt.
+2. Download pretrained weights from [Swin-Unet github](https://github.com/HuCaoFighting/Swin-Unet) and put it in a folder named pretrained_ckpt.
 
 3.To preprocess data and train the model run the script main.py.
 ```
@@ -19,7 +19,7 @@ The segmented image of test set will be saved in outputs.
 
 2.Run the script predict.py.
 ```
-python predict.py --processed-root your Processed DATA_DIR --save-dir your save model DIR --output-dir your OUT_DIR
+python predict.py --main-path your DATA_DIR --save-dir your save model DIR --output-dir your OUT_DIR
 ```
 ## **Requirements**
 The code is tested on Ubuntu 20.04 with the following components:
