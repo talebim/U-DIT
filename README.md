@@ -9,7 +9,7 @@ This repository contains a new deep learning method based on vision transformer 
 
 3. To preprocess data and train the model run the script main.py.
 ```
-python main.py --main-path your DATA_DIR --save-dir your save model DIR
+python main.py --main-path your DATA_DIR --save-dir your save model DIR --output-dir your OUT_DIR
 ```
 The segmented image of the test set will be saved in the outputs.
 ## **Test the trained model:**
