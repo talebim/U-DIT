@@ -13,7 +13,7 @@ python main.py --main-path your DATA_DIR --save-dir your save model DIR
 ```
 The segmented image of the test set will be saved in the outputs.
 ## **Test the trained model:**
-1. To reproduce the results, download the weights of our best model from **[here](https://drive.google.com/drive/u/0/folders/1nvVeGaBRPVT2r9oLPlpjhzYKAptHRE8D)**
+1. To reproduce the results, download the weights of our best model from **[here](https://drive.google.com/file/d/1LQf1-KqqtWimitwjScu0zfMHCMMpCMQO/view?usp=sharing)**
  
 2. Put the best_model.pth file in your save model DIR
 
