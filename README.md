@@ -5,7 +5,9 @@ This repository contains a new deep learning method based on vision transformer 
 ## **Train the model:**
 1.Register and download ACDC-2017 dataset from https://www.creatis.insa-lyon.fr/Challenge/acdc/index.html
 
-2.To preprocess data and train the model run the script main.py.
+2. Download pretrained weights from [Swin-Unet github](https://github.com/HuCaoFighting/Swin-Unet) and put it in a folder named ckpt.
+
+3.To preprocess data and train the model run the script main.py.
 ```
 python main.py --main-path your DATA_DIR --save-dir your save model DIR
 ```
