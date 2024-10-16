@@ -1,7 +1,7 @@
 # U-DIT
 ## **Introduction**
 This repository contains a new deep learning method based on vision transformer (ViT) to automatically localize and segment left ventricle (LV), right ventricle (RV) and myocardium (MYO) in cardiac MR images. The method is introduced in the following paper:
-"[U-Dit: Unet-Like Dilated Transformer for Cardiac MRI Segmentation](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4866882)"
+"[U-DIT: Unet-like Dilated Transformer for Cardiac MRI Segmentation](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4866882)"
 ## **Train the model:**
 1.Register and download ACDC-2017 dataset from https://www.creatis.insa-lyon.fr/Challenge/acdc/index.html
 
@@ -24,7 +24,7 @@ The code is tested on Ubuntu 20.04 with the following components:
 
 Software
 Python 3.8
-pytorch 1.13
+pytorch 2.3.1
 CUDA 11.8 
 
 ## Logs
