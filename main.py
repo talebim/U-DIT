@@ -20,7 +20,7 @@ parser.add_argument('--num-classes', type=int,
                     default=4, help='output channel of network')
 parser.add_argument('--save-dir', type=str, help='save model dir', default='./ckpt')
 parser.add_argument('--max-epochs', type=int,
-                    default=5, help='maximum epoch number to train')
+                    default=150, help='maximum epoch number to train')
 parser.add_argument('--batch-size', type=int,
                     default=5, help='batch_size per gpu')
 parser.add_argument('--base-lr', type=float, default=0.05,
