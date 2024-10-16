@@ -25,7 +25,7 @@ The code is tested on Ubuntu 20.04 with the following components:
 Software
 Python 3.8
 pytorch 2.3.1
-CUDA 11.8 
+CUDA 12.4
 
 ## Logs
 To launch the tensorboard instance run
